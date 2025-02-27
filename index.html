@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>シューティングゲーム</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <header>
+        <h1 class="mt-2 text-center">JavaScriptで作った縦型シューティングゲーム</h1>
+    </header>
+    <main class="d-flex justify-content-evenly mt-2">
+        <section id="playArea">
+            <!-- ゲーム画面の要素をここに配置 -->
+            <div id="gameCanvasContainer">
+                <canvas id="gameCanvas" width="360" height="480"></canvas>
+                <!-- スコアを表示する要素 -->
+                <div id="score">SCORE 0</div>
+                <p id="restShip" class="mb-0"></p>
+            </div>
+            <p class="text-center">上下左右キー：移動　スペースキー：ショット</p>
+        </section>
+        <div id="rankingTbl">
+            <h2 class="bg-success px-5">HIGH SCORE RANKING</h2>
+        </div>
+    </main>
+    <footer>
+        <p class="text-center"><small>&copy; cca Machida Haruhisa Allrights Reserved.</small></p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="script/game.js"></script>
+</body>
+</html>
